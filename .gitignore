@@ -1,2 +1,5 @@
 memory-leak
 memory-leak-fixed
+
+out-of-bounds
+out-of-bounds-fixed
