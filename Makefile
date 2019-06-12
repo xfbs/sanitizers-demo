@@ -1,5 +1,5 @@
 CC=/usr/local/opt/llvm/bin/clang
-CFLANG_FORMAT=/usr/local/opt/llvm/bin/clang-format
+CLANG_FORMAT=/usr/local/opt/llvm/bin/clang-format
 CFLAGS += $(shell pkg-config --cflags jansson) -Wall -Wextra -pedantic
 LDFLAGS += $(shell pkg-config --libs jansson)
 TARGETS = memory-leak memory-leak-fixed
