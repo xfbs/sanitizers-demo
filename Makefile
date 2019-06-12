@@ -3,7 +3,7 @@ CLANG_FORMAT=/usr/local/opt/llvm/bin/clang-format
 CFLAGS += $(shell pkg-config --cflags jansson) -Wall -Wextra -pedantic
 LDFLAGS += $(shell pkg-config --libs jansson)
 LEAK_SANITIZER = memory-leak memory-leak-fixed
-ADDRESS_SANITIZER = out-of-bounds out-of-bounds-fixed out-of-bounds-heap out-of-bounds-heap-fixed
+ADDRESS_SANITIZER = oob-stack oob-stack-fixed oob-heap oob-heap-fixed
 TARGETS += $(LEAK_SANITIZER)
 TARGETS += $(ADDRESS_SANITIZER)
 
