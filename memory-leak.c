@@ -13,10 +13,11 @@ int main(int argc, char *argv[]) {
   json_object_set(object, "msg", string);
 
   // print object.
-  printf("%s\n", json_dumps(object, 0));
+  printf("%s\n", json_dumps(object, 0));  // <-- memory leak!
 
   // free object.
   json_decref(object);
 
   return 0;
+  // <-- memory leak, we never released string.
 }

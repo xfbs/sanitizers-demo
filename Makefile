@@ -6,8 +6,8 @@ TARGETS = memory-leak memory-leak-fixed
 
 all: $(TARGETS)
 
-memory-leak memory-leak-fixed: CFLAGS += -fsanitize=leak
-memory-leak memory-leak-fixed: LDFLAGS += -fsanitize=leak
+memory-leak memory-leak-fixed: CFLAGS += -fsanitize=leak -O1
+memory-leak memory-leak-fixed: LDFLAGS += -fsanitize=leak -O1
 
 # format the source code according to llvm guidelines.
 format:
