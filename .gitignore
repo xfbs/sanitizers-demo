@@ -1,5 +1,7 @@
 memory-leak
 memory-leak-fixed
 
-out-of-bounds
-out-of-bounds-fixed
+oob-stack
+oob-stack-fixed
+oob-heap
+oob-heap-fixed
